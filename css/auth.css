@@ -1,0 +1,11 @@
+section.auth {
+  background-color: var(--lighter-primary-color);
+}
+
+section.auth .container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,40 @@
+body {
+  background-color: #f3fff9;
+}
+
+section#beranda {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section#beranda .container {
+  max-width: 800px;
+}
+
+section#beranda .title {
+  margin-bottom: 20px;
+}
+
+section#beranda .text {
+  margin-bottom: 30px;
+}
+
+section#pengaduan {
+  padding: 120px 0;
+}
+
+section#pengaduan .heading {
+  margin-bottom: 30px;
+}
+
+section#tambah_pengaduan {
+  padding: 120px 0;
+}
+
+section#tambah_pengaduan .card-heading {
+  text-align: left;
+  margin-bottom: 0;
+}

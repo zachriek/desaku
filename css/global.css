@@ -1,0 +1,292 @@
+:root {
+  --primary-color: #04d56c;
+  --darker-primary-color: #03ad58;
+  --lighter-primary-color: #04d56c20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  z-index: 999;
+}
+
+.navbar.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+}
+
+.navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-menu {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+}
+
+.nav-item.logout-btn {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-item.logout-btn .nav-link {
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.nav-item.logout-btn .nav-link:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 48px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.heading {
+  font-size: 32px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.text {
+  opacity: 0.7;
+}
+
+.flex-end {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 30px;
+  align-items: flex-start;
+}
+
+.flex-between {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem 0.5rem;
+  min-width: 350px;
+  border: 3px solid var(--lighter-primary-color);
+  border-radius: 5px;
+  box-shadow: 0 15px 20px 1px var(--lighter-primary-color);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-heading {
+  padding: 1rem;
+  color: var(--primary-color);
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.form-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.form-input {
+  outline: none;
+  border: 1px solid #00000030;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+}
+
+.form-input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.btn {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--darker-primary-color);
+}
+
+.btn-outline-primary {
+  background-color: #fff;
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--darker-primary-color);
+  color: #fff;
+}
+
+.btn-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 10px;
+}
+
+.alert {
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.alert-danger {
+  background: #ff5858;
+  color: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.table thead tr {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:hover {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .text {
+  opacity: 1;
+}
