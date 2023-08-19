@@ -121,7 +121,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  column-gap: 30px;
+  column-gap: 10px;
   align-items: flex-start;
 }
 
@@ -149,14 +149,13 @@ header {
   padding: 1rem;
   color: var(--primary-color);
   font-size: 32px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 0;
 }
 
 .form {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   row-gap: 20px;
 }
@@ -220,6 +219,18 @@ header {
   color: #fff;
 }
 
+.btn-outline-danger {
+  background-color: #fff;
+  color: #ff5e5e;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ff5e5e;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff4949;
+  color: #fff;
+}
+
 .btn-group {
   width: 100%;
   display: flex;
@@ -271,6 +282,10 @@ header {
 
 .table tbody tr:last-of-type {
   border-bottom: 2px solid var(--primary-color);
+}
+
+.hidden {
+  display: none;
 }
 
 footer {

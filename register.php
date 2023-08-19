@@ -53,7 +53,7 @@ if (isset($_POST['registrasi'])) {
           <form class="form" method="POST">
             <div class="form-group">
               <label class="form-label" for="nik">NIK</label>
-              <input type="text" class="form-input" name="nik" placeholder="Masukkan NIK" required>
+              <input type="text" class="form-input" name="nik" placeholder="Masukkan NIK" autofocus required>
             </div>
             <div class="form-group">
               <label class="form-label" for="nama">Nama Lengkap</label>

@@ -1,3 +1,3 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', '', 'laporan_masyarakat');
+$conn = mysqli_connect('localhost', 'root', '', 'desaku');

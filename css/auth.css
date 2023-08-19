@@ -9,3 +9,17 @@ section.auth .container {
   justify-content: center;
   align-items: center;
 }
+
+section.auth .card-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.captcha_code {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  width: max-content;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
